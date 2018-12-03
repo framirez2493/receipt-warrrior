@@ -1,0 +1,102 @@
+
+/*FONT*/
+
+@font-face {
+  font-family: Poppins-Regular;
+  src: url('../fonts/poppins/Poppins-Regular.ttf'); 
+}
+
+@font-face {
+  font-family: Poppins-Medium;
+  src: url('../fonts/poppins/Poppins-Medium.ttf'); 
+}
+
+@font-face {
+  font-family: Poppins-Bold;
+  src: url('../fonts/poppins/Poppins-Bold.ttf'); 
+}
+
+@font-face {
+  font-family: Poppins-SemiBold;
+  src: url('../fonts/poppins/Poppins-SemiBold.ttf'); 
+}
+
+/* END FONT */
+
+.list-group-item {
+  line-height: 2.5;
+}
+form.signup,
+form.login {
+  margin-top: 50px;
+}
+.card {
+  background: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-shadow: rgba(0, 0, 0, 0.117647) 0px 1px 6px, rgba(0, 0, 0, 0.117647) 0px 1px 4px;
+}
+#img-preview{
+  width: 400px;
+  height: 450px;
+}
+
+.container-fluid {
+  background-color: #ffccdc;
+}
+
+body { 
+  background: url('../images/background.png') no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  font-family: Poppins-Regular;
+}
+
+#dropbox { 
+  border: 4px dashed #ccc; 
+  padding-left: 8px;
+  background-color: #fff;
+}
+.my-form {
+  margin-top: 10px;
+}
+.gallery {
+  margin: 10px;
+  background-color: #ccc;
+}
+.file-upload-container {
+    width: 100%;
+    height: 50px;
+    overflow: hidden;
+    background: #3F51B5;
+    user-select: none;
+    transition: all 150ms cubic-bezier(0.23, 1, 0.32, 1) 0ms;
+    text-align: center;
+    color: white;
+    line-height: 50px;
+    font-weight: 300;
+    font-size: 20px;
+}
+
+.file-upload-container:hover {
+    cursor: pointer;
+    background: #3949AB;
+}
+
+/*
+Datatables Search bar, make it longerno
+*/
+
+
+.dataTables_filter input { 
+  width: 250px;
+}
+
+.avatar {
+  max-width: 2.5rem;
+}
+

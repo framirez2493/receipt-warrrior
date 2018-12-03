@@ -1,0 +1,144 @@
+.col2 * { width:100%;
+}
+
+.p-3 {
+    padding: 1rem!important;
+    box-shadow: 1px 1px 1px #0000004f;
+}
+
+
+.btn-grad {
+    border-width: 1px;
+    border-style: solid;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 25px;
+    width: 200px;
+    margin-top: 45px;
+    font-size: 21px;
+    font-family: Poppins-Regular;
+    padding: 10px;
+    text-decoration: none;
+    display: inline-block;
+    text-shadow: 1px 1px 1px #000;
+    font-weight: bold;
+    color: #FFFFFF;
+    background-color: #D69CAF;
+    background-image: -webkit-gradient(linear, left, padding-right, from(#D69CAF), to(#BFEFF5));
+    background-image: -webkit-linear-gradient(left, #BFEFF5, #D69CAF);
+    background-image: -moz-linear-gradient(left, #BFEFF5, #D69CAF);
+    background-image: -ms-linear-gradient(left, #BFEFF5, #D69CAF);
+    background-image: -o-linear-gradient(left, #BFEFF5, #D69CAF);
+    background-image: linear-gradient(to right, #BFEFF5, #D69CAF);
+    filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr=#D69CAF, endColorstr=#BFEFF5);
+  }
+    
+    .btn-grad:hover{
+     box-shadow: 1px 1px 1px #000;
+     background-color: #c77892; background-image: -webkit-gradient(linear, right, from(#BFEFF5, #D69CAF));
+     background-image: -webkit-linear-gradient(left, #BFEFF5, #D69CAF);
+     background-image: -moz-linear-gradient(left, #BFEFF5, #D69CAF);
+     background-image: -ms-linear-gradient(left, #BFEFF5, #D69CAF);
+     background-image: -o-linear-gradient(left, #BFEFF5, #D69CAF);
+     background-image: linear-gradient(to right, #BFEFF5, #D69CAF);filter:progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr=#c77892, endColorstr=#93e4ee);
+    }
+
+    .btn-grad {
+        display: inline-block;
+        display: -moz-inline-box;
+        *display: inline; /* For IE7 */
+        zoom: 1; /* Trigger hasLayout */
+        width: 33%;
+        text-align: center;
+    }
+
+    #submit-btn {
+        width:60%;
+    }
+
+    #submit-btn2 {
+        width:60%;
+    }
+
+    .submit-btn3 {
+        width:100%;
+    }
+
+    h3, h3 {
+        font-size: 1.953rem;
+        line-height: 2.25rem;
+        text-align: center;
+        margin-top: 50px;
+        color: #000;
+    }
+
+    .h1t{
+        text-align: center !important;
+    }
+
+    .h2t {
+        text-align: center !important;
+
+    }
+
+ .member-name {
+            color: #D69CAF;
+            font-weight: bold;
+            font-size: 38px;
+            letter-spacing: 1px;
+            padding: 10px;
+            text-decoration: underline;
+            text-decoration-style:wavy;
+        }
+
+.modal-title {
+        line-height: 1.5;
+        letter-spacing: 1px;
+        width: 100%;
+    }
+
+.modal-header .close {
+    float:right !important;
+    color: red !important;
+    margin-right: 0;
+}
+
+#modalstatus {
+    color: red;
+    font-weight: bold;
+}
+
+#modalstatusreason{
+    color: red;
+    font-weight: bold;
+}
+
+.row {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+    font-family: "Poppins-Regular";
+    font-weight: bold;
+}
+
+
+.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+
+    font-family: "Poppins-Regular";
+    color: #000;
+}
+
+label {
+    font-weight: 400;
+    margin-top: 25px;
+    margin-bottom: 20px;
+}
+
+w-100 p-3 {
+    background-color:#fff;
+}
+
+/* Responsive ]*/

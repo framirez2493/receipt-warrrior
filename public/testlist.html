@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>HOME (View Products)</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/lumen/bootstrap.min.css">
+
+    <!-- datatables CDN https://datatables.net/examples/basic_init/zero_configuration.html -->
+    <link rel="stylesheet" type="text/css" media="screen" href="https://cdn.datatables.net/1.10.19/css/jquery.dataTables.min.css" />
+
+    <link rel="stylesheet" href="styles/styles.css">
+
+</head>
+
+<body>
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#"><img class="avatar" src="images/icons/if_ninja-simple_479476.png" alt="User Avatar"></a>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="/members">Home</a></li>
+                    <li><a href="/addProduct">Add</a></li>
+                    <li><a href="/manageProduct">Manage</a></li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="/logout"><span class="glyphicon glyphicon-log-out
+                      "></span>
+                            Logout</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-9 col-md-offset-3">
+                <h3>Welcome <span class="member-name"></span></h3>
+
+                <h4>Home: Click on Product For More Details</h4>
+                <ul class="nav nav-pills">
+                    <li class="active"><a href="/members">Home</a></li>
+                    <li><a href="/addProduct">Add</a></li>
+                    <li><a href="/manageProduct">Manage</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="row">
+            <p id="resultproductlist">
+            </p>
+            <table id="productlisttable" class="table table-bordered table-hover table-condensed">
+                <thead>
+                    <tr>
+                        <th title="Field #1">ID</th>
+                        <th title="Field #5">Warranty Expire</th>
+                        <th title="Field #2">Purchased</th>
+                        <th title="Field #3">Product</th>
+                        <th title="Field #4">Price</th>
+
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Data is retreived via ajax datatables API -->
+                </tbody>
+            </table>
+        </div>
+
+
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="listModal" role="dialog">
+        <div class="modal-dialog">
+
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">Product Details</h4>
+                </div>
+                <div class="modal-body">
+                    <div class="row">Created At: <span id="prodcreate"></span></div>
+                    <div class="row">Last Update: <span id="produpdate"></span></div>
+                    <div class="row">Warranty Expires: <span id="warrantyexp"></span></div>
+                    <div class="row">Product Name: <span id="prodname"></span></div>
+                    <div class="row">Product Price: <span id="prodprice"></span></div>
+                    <div class="row">Purchase Date: <span id="purchasedate"></span></div>
+                    <div class="row">Store: <span id="store"></span></div>
+                    <div class="row">notes: <span id="notes"></span></div>
+                    <div class="row">Receipt: <img id="receipturl" src="" class='img-responsive' style='max-width:300px'
+                            alt="receipt image"></div>
+                    <div class="row">Warranty: <img id="warrantyurl" src="" class='img-responsive' style='max-width:300px'
+                            alt="warrranty image"></div>
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+    <!-- CDN for datatables js, this includes Jquery  -->
+    <!-- https://datatables.net/examples/basic_init/zero_configuration.html -->
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <script src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script>
+    <!-- CDN for bootstrap js, excludes Jquery since it's called above -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+        crossorigin="anonymous"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.2/moment.min.js"></script>
+    <script type="text/javascript" src="js/testinglist.js"></script>
+
+</body>
+
+</html>
