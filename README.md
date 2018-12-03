@@ -12,7 +12,7 @@ just go online signup and you will be able to upload your receipst and warrantie
 
 ## test
 # sign up and try our app still free!
-#### Built with Java script sequalize and passport.js. Check it out [here](https://quiet-oasis-70947.herokuapp.com/).
+#### Built with Java script sequalize and passport.js. Check it out [here](https://limitless-badlands-89795.herokuapp.com/).
 
 
  
